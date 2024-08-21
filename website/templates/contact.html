@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .Avancer{
+            font-family: Edu Australia VIC WA NT Hand;
+            font-style: oblique;
+            font-size:xx-large ;
+            color: rgb(139, 223, 56);
+            padding-right: 20px;
+            padding-left: 20px;
+            background-color: darkblue;
+
+        }
+        body{
+            margin-bottom: 25%;
+            background:linear-gradient(40deg,blue,rgb(228, 226, 226) ,rgb(226, 222, 222),dodgerblue,rgb(248, 242, 242),rgb(245, 243, 243),rgb(84, 152, 230),rgb(245, 239, 239),rgb(236, 233, 233));    
+        }
+        .cnt{
+            color:saddlebrown;
+            margin-left: 20%;
+
+        }
+        p{
+            color:darkgreen;
+            margin-left: 20%;
+            font-size: large;
+        }
+        h4{
+            color: navy;
+            margin-left: 20%;
+            font-size: x-large;
+        }
+        button{
+            background-color: rgb(127, 219, 255); 
+            border-radius: 10px;
+            height: 25px;
+            font-weight: bold;
+            text-align: center;
+            border-color: darkblue
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: blue;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header><h2 class="Avancer">Avancer Tours</h2></header>
+    <button type="submit"><a href="{% url 'index' %}">Home Page</a></button>
+    <h4>Feel free to contact us</h4>
+    <h2 class="cnt" >Contact info</h2>
+    <p>Phone number       : 9999999999</p>
+    <p>Alternative number : 9876543210</p>
+    <p>Email              : service@avancer.com</p>
+    <p>Address            : 12/55,First floor,Chimmany building,Kaloor,Ernakulam,Kerala,685542</p>
+    
+</body>
+</html>

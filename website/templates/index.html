@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'CSS/indexpage.css' %}" >
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div class="hdr">
+            <h2 class="Avancer">Avancer Tour</h2>
+            <nav class="navbar">
+                <div class="atag">
+                    <a href="user_dis_package/">Packages</a>
+                    <a href="userlogin/">Book_Now </a>
+                    <a href="vendorlogin/">Vendors</a>
+                    <a href="contact/">Contact_Us </a>
+                </div>    
+            </nav>
+            <img src="static/image/image1.jpg" alt="Image" width="100%" height="80%">            
+        </div>
+    </header>
+    <main>
+        <h3 class="wel">Welcome to Avancer Tour</h3>
+        <p class="content" >You can find your dream tours here. We will help you for that.</p>
+        <br><br>
+        <div class="ma1">
+            <h3 class="facility" > Our Facility</h3>
+
+            <h4 class="sa"> Finest Safety Systems</h4>
+            <p class="p1"> Avancer Tour prioritizes customer safety with a robust system, featuring GPS- enabled vehicles,trained drivers,and stringentmaintanace checks.We ensure a secure and comfortable journey for every passenger, always.</p>
+
+            <h3 class="facility">Our Success</h3>
+            <div class="discrip">
+                <dl>
+                    <dt class="sa" ><li>Competitive Pricing</li></dt>
+                    <dd class="p1">Unbeatable fares, ensuring your journey is both affordable and unforgettable.</dd>
+                </dl>
+                <dl>
+                    <dt class="sa"><li>Fast Booking</li></dt>
+                    <dd class="p1">Instantly reserve your trip with Avancer Tour- enjoy swift,hassles-free booking for your travel needs.</dd>
+                </dl>
+                <dl>
+                    <dt class="sa"><li>Best Support 24/7</li></dt>
+                    <dd class="p1">unmatched 24/7 support ensures seamless travel experiences, offering peace of mind around the clock.</dd>
+                </dl>
+                <dl>
+                    <dt class="sa"><li>Ultimate Flexiblility</li></dt>
+                    <dd class="p1">Avancer Tour offers unmatched flexibility, adapting to your travel needs with seamless customization and personalized service.</dd>
+                </dl>
+        </div>
+    </main>
+    <footer class="footr">
+        <nav class="footrnav">
+            <ul>
+                <p id="quick">Quick Link </p>
+                <div class="quick-footr">
+
+                <li><a href="user_dis_package/">Packages</a></li>
+                <li><a href="userlogin/">Book Now</a></li>
+                <li><a href="vendorlogin/">Vendors</a></li>
+                <li><a href="contact/">Contact us</a></li>
+                </div>
+            </ul>    
+        </nav>
+        <h5 > @ All rights reserved</h5>
+    </footer>
+</body>
+</html>

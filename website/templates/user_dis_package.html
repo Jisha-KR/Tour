@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dis page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'CSS/user_dis_package.css' %}">
+    <script src='main.js'></script>
+</head>
+<body>
+    <header><h2 class="Avancer">Avancer Tours</h2></header>
+
+
+    <div class="dis">
+        <form method="GET" action="{% url 'searchbar' %}">
+            
+            {% csrf_token %}
+            <input type="text" placeholder="  search..." name="search" class="sear" >
+            <button type="submit">Search</button>
+            <button class="log" type="submit"><a href="{% url 'logoutt' %}">Logout</a></button>
+            <h2>Package details </h2>
+
+            {% for i in post %}
+                {% if post %}
+                    <br><br><img src="{{ i.image.url }}" alt="image" width="30%" height="40%">
+                    <br><label >Destination: {{ i.destination }}</label><br>
+                    <label >Price in Rs. : {{ i.price }}</label><br>
+                    <label >Duration: {{ i.duration }}</label><br>
+                    <label >Details: {{ i.details }}</label><br><br>
+                    <button type="submit"><a href="{% url 'package_details' i.pk %}">Book Now</a></button>
+                    <br>
+
+                {%  endif %}
+            {% endfor %}    
+    
+        </form>
+    </div>
+    {% for i in item %}
+        {% if i.approved %}
+
+            <br><img src="{{ i.image.url }}" alt="image" width="30%" height="40%">
+            <br><label >Destination: {{ i.destination }}</label><br>
+            <label >Price in Rs. : {{ i.price }}</label><br>
+            <label >Duration: {{ i.duration }}</label><br>
+            <label >Details: {{ i.details }}</label><br><br>
+            <button type="submit"><a href="{% url 'usrlogn'  %}">Book Now</a></button>
+
+            <br><br>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

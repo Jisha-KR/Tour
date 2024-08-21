@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>User packages</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>Avancer Tours</header>
+
+    <h2>Packages available</h2>
+    <div>
+        <form method="GET" action="{% url 'searchbar' %}">
+            
+            {% csrf_token %}
+            <input type="text" placeholder="search..." name="search">
+            <button type="submit">Search</button>
+
+            {% for i in post %}
+                {% if post %}
+                    <br><br><img src="{{ i.image.url }}" alt="image" width="30%" height="40%">
+                    <br><label >Destination: {{ i.destination }}</label><br>
+                    <label >Price in Rs. : {{ i.price }}</label><br>
+                    <label >Duration: {{ i.duration }}</label><br>
+                    <label >Details: {{ i.details }}</label><br>
+                {%  endif %}
+            {% endfor %}    
+    
+        </form>
+    </div>
+    {% for i in item %}
+        {% if i.approved %}
+
+            <br><img src="{{ i.image.url }}" alt="image" width="30%" height="40%">
+            <br><label >Destination: {{ i.destination }}</label><br>
+            <label >Price in Rs. : {{ i.price }}</label><br>
+            <label >Duration: {{ i.duration }}</label><br>
+            <label >Details: {{ i.details }}</label><br>
+
+            <br>
+        {% endif %}
+    {% endfor %}
+    <button type="submit"> <a href="{% url 'disply' %}" >Back </a></button>
+    
+</body>
+</html>

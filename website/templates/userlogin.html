@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>User Login Page</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'CSS/userloginn.css' %}" >
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <header><h2 class="Avancer">Avancer Tours</h2></header>
+
+    <h2 class="hd">User Login Form</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+        <button type="submit"><a href="{% url 'userregistration' %}">Register</a></button>
+    </form>
+</body>
+</html>

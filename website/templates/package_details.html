@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{{ package.destination }}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'CSS/package_details.css' %}">   
+    <script src='main.js'></script>
+    
+</head>
+<body>
+    <header><h2 class="Avancer">Avancer Tours</h2></header>
+
+    <button type="submit" class="log" ><a href="{% url 'logoutt' %}">Logout</a></button>
+
+    <div class="dis" >
+        
+        <br><img src="{{ package.image.url }}" alt="image" width="30%" height="40%">
+        <br><label >Destination: {{ package.destination }}</label><br>
+        <label >Price per person in Rs. :<span id="price">{{ package.price }}</span> </label><br>
+        <label >Duration: {{ package.duration }}</label><br>
+        <label >Details: {{ package.details }}</label><br>
+
+        <form method="post" action="{% url 'package_details' pk=package.pk %}">
+            {% csrf_token %}
+            {{ form.as_p }}  
+        </form>
+
+    </div>
+    <h4>Book This Package by paying amount</h4>
+    <br>
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OfA0jKOnLEmtba" async> </script> </form>
+</body>
+</html>

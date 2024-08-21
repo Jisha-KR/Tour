@@ -1,0 +1,50 @@
+.Avancer{
+    font-family: Edu Australia VIC WA NT Hand;
+    font-style: oblique;
+    font-size:xx-large ;
+    color: rgb(139, 223, 56);
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: darkblue;
+
+}
+body{
+    background:linear-gradient(40deg,blue,rgb(228, 226, 226) ,rgb(226, 222, 222),dodgerblue,rgb(248, 242, 242),rgb(245, 243, 243),rgb(84, 152, 230),rgb(245, 239, 239),rgb(236, 233, 233));    
+
+}
+h2{
+    color: brown;
+}
+button{
+    color:chocolate;
+    background-color: rgb(127, 219, 255); 
+    border-radius: 10px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-color: darkblue
+}
+button:hover{
+    cursor: pointer;
+    background-color:violet;
+    color: rgb(59, 92, 15);
+}
+.sear{
+    margin-left: 70%;
+}
+input{
+    border-radius: 10px;
+    height: 20px;
+}
+.log{
+    margin-left: 5%;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.dis{
+    color:rgb(18, 18, 22);
+    line-height: 150%;
+}

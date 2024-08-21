@@ -1,0 +1,109 @@
+.Avancer{
+    font-family: Edu Australia VIC WA NT Hand;
+    font-style: oblique;
+    font-size:xx-large ;
+    color: rgb(139, 223, 56);
+    padding-right: 20px;
+    padding-left: 10%;
+    background-color: darkblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hdr{
+    font-size: large;
+    background-size: cover;
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Backgrounds-For-Desktop.jpg");
+    border: 500px;
+    height: 625px;
+}
+.navbar{
+    padding-left: 10%;
+    padding-top: 25px;
+    font-style: oblique;
+    word-spacing: 50px;
+    display: flex;
+}
+.atag{
+    color: aqua;
+    cursor: cell;
+    word-spacing: 50px;
+    font-size: x-large;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+.wel{
+    color: rgb(16, 8, 63);
+    padding-left: 20%;
+  /*  padding-top: 5%;*/
+    font-size: 200%;
+    word-spacing: 20px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.content{
+    color: rgb(44, 56, 224);
+    padding-left: 10%;
+    font-size: 150%;
+    word-spacing: 10px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.facility{
+    color:rgb(231, 193, 87);
+    padding-left: 3%;
+    font-size: 200%;
+}
+.sa{
+    color: royalblue;
+    padding-left: 5%;
+    font-size: 150%;
+
+}
+.p1{
+    color: teal;
+    padding-left: 7%;
+    font-size: 125%;
+    padding-top: 1%;
+}
+main{
+   background-color: powderblue;
+}
+#quick{
+    color: rgb(2, 2, 41);
+    font-size:x-large;
+    padding-left: 18%;
+    padding-top: 2%;
+}
+.ma1{
+    padding-bottom: 1%;
+}
+.quick-footr {
+    color:navy;
+    font-weight: bolder;
+    padding-left: 20%;
+}
+.quick-footr a{
+    color:navy;
+    font-weight: bolder;
+    line-height: 30px;
+    font-size:large;
+
+}
+.quick-footr a:hover{
+    text-decoration: underline;
+}
+.quick-footr a:active{
+    color: blueviolet;
+}
+.footr{
+    color: rgb(26, 24, 24);
+    background-color: rgb(113, 144, 211);
+}
+
+h5{
+    color: blanchedalmond;
+    text-align: center;
+    background-color: rgb(2, 2, 41);
+}

@@ -1,0 +1,66 @@
+.Avancer{
+    font-family: Edu Australia VIC WA NT Hand;
+    font-style: oblique;
+    font-size:xx-large ;
+    color: rgb(139, 223, 56);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+body{
+    background:linear-gradient(40deg,blue,rgb(228, 226, 226) ,rgb(226, 222, 222),dodgerblue,rgb(248, 242, 242),rgb(245, 243, 243),rgb(84, 152, 230),rgb(245, 239, 239),rgb(236, 233, 233));    
+
+}
+h2{
+    color: brown;
+}
+input{
+    border-radius: 10px;
+    height: 20px;
+}
+
+button{
+    color:chocolate;
+    background-color: rgb(127, 219, 255); 
+    border-radius: 10px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(233, 162, 111);
+    color: rgb(59, 92, 15);
+}
+.sear{
+    padding-left: 50%;
+}
+.sear1{
+    display: flex;
+}
+/* Container for the image */
+.image-container {
+    display: inline-block;
+    overflow: hidden; /* Ensure that the zoom effect doesn't spill outside the container */
+}
+
+/* Image styling */
+.zoomable {
+    transition:transform 0.3s ease; /* Smooth transition for zoom effect */
+    cursor: pointer; /* Indicate that the image is clickable */
+}
+
+/* Zoom effect on click */
+.zoomable:active {
+    transform: scale(1.5); /* Scale the image by 1.5 times */
+}
+.zoomable:hover {
+    transform: scale(1.1); /* Slightly zoomed on hover */
+}
+/* CSS for persistent zoom */
+.zoomable.zoomed {
+    transform: scale(1.5); /* Persistent zoom */
+}
+header{
+    background-color: blue;
+}
